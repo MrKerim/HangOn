@@ -1,4 +1,6 @@
 import javax.sound.sampled.*;
+import javax.swing.JOptionPane;
+
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.IOException;
@@ -29,9 +31,8 @@ public class AudioManager {
             clip.loop(Clip.LOOP_CONTINUOUSLY);
             playing = true;
 
-        } catch (LineUnavailableException |
-                 UnsupportedAudioFileException | IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Audio file could not be loaded, luccly you can still play the game", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
