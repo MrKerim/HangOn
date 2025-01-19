@@ -4,6 +4,10 @@ This project is a simpl replica of the classic arcade game Hang On by SEGA proje
 
 Game also provides a login and score board system integrated with a simple google Apss Script API and a Google Sheet for the database.
 
+If you want to play here is the link from the same repo : [Download](https://raw.githubusercontent.com/MrKerim/HangOn/refs/heads/main/production/HangOn.jar)
+
+Or you can just download it form the repo or you can donwload the repo and builg it yourself.
+
 ---
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; padding: 16px;">
