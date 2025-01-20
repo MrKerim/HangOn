@@ -42,7 +42,7 @@ public class GameLoop {
 
     public static void endGame(){
 
-        int score = game.getPos() + game.getExtraPoints()*GameSettings.segL*10;
+        int score = game.getPos() + game.getExtraPoints()*GameSettings.segL*40;
         frame.dispose();
         game = null;
         timer.stop();

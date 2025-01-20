@@ -28,18 +28,22 @@ public class GameSettings {
 
     public static final int raceTrackBound = 1950;
 
-    public static final  double shiftPlayerInCornerOffset = 3.1;
+    public static final  double shiftPlayerInCornerOffset = 3.8;
     //public static final  double shiftPlayerInCornerOffset = 0;
 
     public static final int characterMaxSpeed = 1000;
 
-    public static final int roadLength = 5000;
+    public static final int roadLength = 8500;
 
-    public static final int curve_length = 400;
+    public static final int curve_length = 100;
     public static final int curve_angle = 10;
-    public static final int[] rightCurveStart = new int[]{ 1000,2400 };
-    public static final int[] leftCurveStart = new int[]{ 300,1700 };
-    public static final int[] checkpoints = new int[] { 0,800,1500,2200,2900,3700 };
+    public static final int[] rightCurveStart = new int[]{ 500,700,800,900,1400,2000,2400,2500,2600,3000,
+                                                            3100,3200,4000,4100,4200,4400,4600,5100,5200,5300
+                                                            };
+    public static final int[] leftCurveStart = new int[]{ 300,400,1200,1300,1700,1800,2100,2200,2300,
+                                                            3300,3400,3500,4300,4500,5000,
+                                                            5700,5800,5900};
+    public static final int[] checkpoints = new int[] { 0,800,1500,2200,2900,3700,4500,5300,6100,7500 };
 
     // number of lines we see until the horizon (useless to increase after 300)
     public static final int horizon_length = 300;
@@ -90,7 +94,7 @@ public class GameSettings {
 
     public static final int gameStartInterval = 4000;
 
-    public static final int timeRemainingPerCheckPoint = 30;
+    public static final int timeRemainingPerCheckPoint = 22;
 
     public static final String bcryptSalt = "$2a$12$1234567890123456789012";
 
