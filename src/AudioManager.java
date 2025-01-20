@@ -32,7 +32,7 @@ public class AudioManager {
             playing = true;
 
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Audio file could not be loaded, luccly you can still play the game", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Audio file could not be loaded, luckily you can still play the game", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 

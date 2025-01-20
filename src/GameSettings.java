@@ -10,6 +10,8 @@ public class GameSettings {
         BEFORE_GAME_START,GAME_OVER_TIME_OUT,RUNNING,GAME_OVER_EXPLOSION,GAME_OVER_FALL, GAME_FINISHED
     }
 
+    public static final String version_number = "1";
+
     public static final int D_W = 1600;
     public static final int D_H = 1200;
     public static final int with = 1600;

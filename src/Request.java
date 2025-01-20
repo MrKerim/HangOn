@@ -176,7 +176,35 @@ public class Request {
             return false;
         }
 
+    public static void versionControl(){
 
+        try {
+            String apiUrl = "https://script.google.com/macros/s/AKfycbx9OKhZ8JxLsnDP255FHX1ImLgWsftlaESGsvrENxnRQKqpm90H5Fvmzq6s533Jwu9O/exec?req=getVersion";
+            URL url = new URL(apiUrl);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            String line;
+            StringBuilder response = new StringBuilder();
+            while ((line = reader.readLine()) != null) {
+                response.append(line);
+            }
+            reader.close();
+
+            String responseText = response.toString();
+            JSONObject jsonObject = new JSONObject(responseText);
+
+            String versionNumber = jsonObject.getString("versionNumber");
+            String versionMessage = jsonObject.getString("versionMessage");
+
+            if(!versionNumber.equals(GameSettings.version_number)) JOptionPane.showMessageDialog(null,"There is a new version available\nYou can download it from the same repository\nVersion : "+versionNumber+"\n"+versionMessage);
+
+        } catch (Exception e) {
+            System.out.println("There was a problem retrieving the data from the server.");
+        }
+
+    }
 
 
 }
